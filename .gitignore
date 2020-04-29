@@ -1,0 +1,7 @@
+**/.snakemake
+00_ref_sequences
+01_bowtie2_ref
+02_rDNA_frags
+03_alignment
+04_coverage_tracks
+logs

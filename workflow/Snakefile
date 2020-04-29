@@ -1,0 +1,28 @@
+# Snakemake workflow
+#
+# Author: Maurits Evers (maurits.evers@gmail.com)
+# License: GPLv3
+# Original date: 28-04-2020
+# Last changed: 29-04-2020
+
+
+
+# Config files
+configfile: "workflow/config.yaml"
+
+
+# Include specific rules
+include: "rules/download_files.smk"
+include: "rules/make_reference.smk"
+include: "rules/create_align_rDNA_frags.smk"
+include: "rules/postprocessing.smk"
+
+
+rule all:
+    input:
+        expand(
+            "03_alignment/{id}/rDNA_frags_GRCm38.bam.bai",
+            id = ["hard_masked", "unmasked"]),
+        expand(
+            "04_coverage_tracks/{id}/rDNA_frags_GRCm38.bw",
+            id = ["hard_masked", "unmasked"])

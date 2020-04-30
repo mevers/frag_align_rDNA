@@ -54,7 +54,18 @@ install `bowtie2` etc (although it doesn't affect the workflow if these tools
 are already installed).
 
 
-## Details
+## Details & comments
+
+### Performance
+
+Running `bowtie2` with `-all` to report *all* alignments leads to the alignment
+taking a *very* long time, especially when aligning reads to the unmasked
+reference genome. It might make sense to play around with reducing the number
+of simulated reads; additionally, the alignment rule can be optimised to allow
+for multiple threads/cores.
+
+
+### Location of rDNA repeats across the genome
 
 Mouse rDNA tandem repeats are located on chromosomes (11,) 12, 15, 16, 18 and 19.
 
@@ -65,7 +76,7 @@ References:
 - [Xu et al., *Ribosomal DNA copy number loss and sequence variation in cancer*, PLOS Genetics 1006771 (2017)](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006771)
 
 
-## Bugs
+### Bugs
 
 None. Yet.
 
@@ -74,5 +85,5 @@ None. Yet.
 
 Maurits Evers (maurits.evers@gmail.com)
 
-Please raise any questions, concerns, bugs as an Issue on the GitHub project
+Please raise any questions, concerns, bugs as an [Issue](https://github.com/mevers/frag_align_rDNA/issues) on the GitHub project
 site.

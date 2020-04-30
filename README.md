@@ -30,17 +30,6 @@ parameters except for switch `--all` to report *all* alignments.
 - Create BigWig coverage track from BAM file using `deeptools` `bamCoverage`
 
 
-## Details
-
-Mouse rDNA tandem repeats are located on chromosomes (11,) 12, 15, 16, 18 and 19.
-
-References:
-
-- [Gibbons et al., *Concerted copy number variation balances ribosomal DNA dosage in human and mouse genomes*, PNAS 112, 2485 (2015)](https://www.pnas.org/content/112/8/2485)
-- [Henderson et al., *The chromosomal location of ribosomal DNA in the mouse*, Chromosoma 49, 155 (1974)](https://link-springer-com.virtual.anu.edu.au/article/10.1007/BF00348887)
-- [Xu et al., *Ribosomal DNA copy number loss and sequence variation in cancer*, PLOS Genetics 1006771 (2017)](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006771)
-
-
 ## Workflow deployment and requirements
 
 The `snakemake` workflow should be entirely self-contained and reproducible.
@@ -63,6 +52,22 @@ External dependencies include `bowtie2`, `samtools` and `deeptools`, and will
 be met automatically through `conda` environments. There is no need to manually
 install `bowtie2` etc (although it doesn't affect the workflow if these tools
 are already installed).
+
+
+## Details
+
+Mouse rDNA tandem repeats are located on chromosomes (11,) 12, 15, 16, 18 and 19.
+
+References:
+
+- [Gibbons et al., *Concerted copy number variation balances ribosomal DNA dosage in human and mouse genomes*, PNAS 112, 2485 (2015)](https://www.pnas.org/content/112/8/2485)
+- [Henderson et al., *The chromosomal location of ribosomal DNA in the mouse*, Chromosoma 49, 155 (1974)](https://link-springer-com.virtual.anu.edu.au/article/10.1007/BF00348887)
+- [Xu et al., *Ribosomal DNA copy number loss and sequence variation in cancer*, PLOS Genetics 1006771 (2017)](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006771)
+
+
+## Bugs
+
+None. Yet.
 
 
 ## Contact

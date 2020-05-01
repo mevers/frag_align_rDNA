@@ -5,4 +5,5 @@
 #snakemake --rulegraph | dot -Tpng > workflow_rulegraph.png
 
 # Execute workflow
-snakemake --use-conda --debug-dag
+# To debug the DAG use `--debug-dag`
+snakemake --use-conda --cores

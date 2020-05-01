@@ -1,0 +1,10 @@
+channels:
+    - r
+    - conda-forge
+    - bioconda
+dependencies:
+    - r=3.6
+    - r-tidyverse=1.2.1
+    - bioconductor-rsamtools
+    - bioconductor-biostrings
+    - r-circlize

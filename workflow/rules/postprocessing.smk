@@ -13,16 +13,21 @@ rule index_bam_file:
 
 
 # Create BigWig coverage track
+# Note that `bamCoverage` needs a BAM file along with an index, so the index
+# is a critical input file
 rule create_bw_coverage_track:
     input:
-        "03_alignment/{id}/rDNA_frags_{name}.bam"
+        expand("03_alignment/{{organism}}/{{name}}/"
+        "rDNA_frags_len{{len_frag}}_step{{step}}.{ext}",
+        ext = ["bam", "bam.bai"])
     output:
-        "04_coverage_tracks/{id}/rDNA_frags_{name}.bw"
+        "04_coverage_tracks/{organism}/{name}/"
+        "rDNA_frags_len{len_frag}_step{step}.bw"
     conda:
         "../envs/deeptools.yaml"
     log:
-        "logs/bamCoverage_{id}_{name}.log"
+        "logs/bamCoverage_{organism}_{name}_len{len_frag}_step{step}.log"
     shell:
         """
-            bamCoverage -b {input} -o {output} 2> {log} 1>&2
+            bamCoverage -b {input[0]} -o {output} 2>{log} 1>&2
         """

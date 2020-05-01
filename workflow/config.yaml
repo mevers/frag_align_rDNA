@@ -1,56 +1,69 @@
-# Genome reference sequences
-genome_reference:
-    hard_masked:
-        organism: Mouse
-        base_url: ftp://ftp.ensembl.org/pub/release-89/fasta/mus_musculus/dna
-        name: GRCm38
-        units:
-            - Mus_musculus.GRCm38.dna_rm.chromosome.1.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.2.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.3.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.4.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.5.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.6.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.7.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.8.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.9.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.10.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.11.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.12.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.13.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.14.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.15.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.16.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.17.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.18.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.19.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.X.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.Y.fa.gz
-            - Mus_musculus.GRCm38.dna_rm.chromosome.MT.fa.gz
-    unmasked:
-        organism: Mouse
-        base_url: ftp://ftp.ensembl.org/pub/release-89/fasta/mus_musculus/dna
-        name: GRCm38
-        units:
-            - Mus_musculus.GRCm38.dna.chromosome.1.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.2.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.3.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.4.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.5.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.6.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.7.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.8.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.9.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.10.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.11.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.12.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.13.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.14.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.15.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.16.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.17.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.18.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.19.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.X.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.Y.fa.gz
-            - Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
+# Sequence data
+data:
+    mouse:
+        Ensembl:
+            base_url: ftp://ftp.ensembl.org/pub/release-99/fasta/mus_musculus/dna
+            name: GRCm38
+            units:
+                - Mus_musculus.GRCm38.dna.chromosome.1.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.2.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.3.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.4.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.5.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.6.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.7.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.8.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.9.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.10.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.11.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.12.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.13.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.14.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.15.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.16.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.17.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.18.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.19.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.X.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.Y.fa.gz
+                - Mus_musculus.GRCm38.dna.chromosome.MT.fa.gz
+        GenBank:
+            accession_no: BK000964.3
+        UCSC:
+            base_url: hgdownload.cse.ucsc.edu/goldenPath/mm10/database
+            cytoband: cytoBand.txt.gz
+    human:
+        Ensembl:
+            base_url: ftp://ftp.ensembl.org/pub/release-99/fasta/homo_sapiens/dna
+            name: GRCh38
+            units:
+                - Homo_sapiens.GRCh38.dna.chromosome.1.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.2.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.3.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.4.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.5.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.6.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.7.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.8.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.9.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.10.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.11.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.12.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.13.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.14.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.15.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.16.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.17.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.18.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.19.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.20.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.21.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.X.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.Y.fa.gz
+                - Homo_sapiens.GRCh38.dna.chromosome.MT.fa.gz
+        GenBank:
+            accession_no: U13369.1
+        UCSC:
+            base_url: hgdownload.cse.ucsc.edu/goldenPath/hg38/database
+            cytoband: cytoBand.txt.gz

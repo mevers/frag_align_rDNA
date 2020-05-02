@@ -72,7 +72,7 @@ Details about specific rules are given in the corresponding `snakemake` rules
 files in folder `workflow/rules`.
 
 More extensive modifications may require new rules and/or changes to the
-existing rules. 
+existing rules.
 
 
 ## Details & comments
@@ -124,7 +124,9 @@ Fragment length = 100 bp, non-overlapping | Fragment length = 500 bp, non-overla
 ![alt_text](05_circos_plots/mouse/GRCm38/circos_rDNA_frags_len100_step100.png) | ![alt_text](05_circos_plots/mouse/GRCm38/circos_rDNA_frags_len500_step500.png) | ![alt_text](05_circos_plots/mouse/GRCm38/circos_rDNA_frags_len1000_step1000.png)
 
 
-Figures are included as both PDFs and PNGs in folders `05_circos_plots/mouse/GRCm38` and `05_circos_plots/mouse/GRCm38`.
+Figures are included as PNGs in folders `05_circos_plots/mouse/GRCm38` and
+`05_circos_plots/mouse/GRCm38`. Scalable PDF versions of the figures are
+generated when executing the full workflow.
 
 
 ### Bugs

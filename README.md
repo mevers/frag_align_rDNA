@@ -53,7 +53,7 @@ cd frag_align_rDNA
 # Execute workflow
 ./run_workflow.sh
 # Or explicitly:
-# snakemake --use-conda
+# snakemake --use-conda --cores
 ```
 
 External dependencies include `bowtie2`, `samtools`, `deeptools` and `R` (along
@@ -62,14 +62,26 @@ with the additional R/Bioconductor libraries `tidyverse`, `Biostrings`,
 `conda` environments. There is no need to manually install `bowtie2` etc.,
 although it doesn't affect the workflow if these tools are already installed.
 
+### How to make changes to the workflow
+
+To change (parts of) the workflow, a minimal familiarity with `snakemake` is
+recommended. For example, to fragment the rDNA with overlapping (instead of
+non-overlapping) windows the `input` targets of `rule all` need to be changed,
+because the window and step size are inferred from the output file names.
+Details about specific rules are given in the corresponding `snakemake` rules
+files in folder `workflow/rules`.
+
+More extensive modifications may require new rules and/or changes to the
+existing rules. 
+
 
 ## Details & comments
 
 ### Performance
 
-Running `bowtie2` with `-all` to report *all* alignments leads to the alignment
-taking a *very* long time. Be aware, when changing parameters of the rDNA
-fragment process and increasing the number of rDNA fragments.
+Running `bowtie2` with `-all` to report *all* alignments takes a *very* long
+time. Be aware, when changing parameters of the rDNA fragment process and
+increasing the number of rDNA fragments.
 
 ### Location of rDNA repeats across the genome
 
@@ -111,6 +123,8 @@ Fragment length = 100 bp, non-overlapping | Fragment length = 500 bp, non-overla
 :---------:|:----------:|:-----------:
 ![alt_text](05_circos_plots/mouse/GRCm38/circos_rDNA_frags_len100_step100.png) | ![alt_text](05_circos_plots/mouse/GRCm38/circos_rDNA_frags_len500_step500.png) | ![alt_text](05_circos_plots/mouse/GRCm38/circos_rDNA_frags_len1000_step1000.png)
 
+
+Figures are included as both PDFs and PNGs in folders `05_circos_plots/mouse/GRCm38` and `05_circos_plots/mouse/GRCm38`.
 
 
 ### Bugs

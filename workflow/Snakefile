@@ -11,7 +11,7 @@ configfile: "workflow/config.yaml"
 
 
 # Include specific rules
-include: "rules/download_files.smk"
+#include: "rules/download_files.smk"
 include: "rules/make_reference.smk"
 include: "rules/create_align_rDNA_frags.smk"
 include: "rules/postprocessing.smk"

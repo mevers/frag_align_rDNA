@@ -72,9 +72,17 @@ df_cyto <- df_cyto %>% filter(chrom %in% valid_chr)
 df_map <- df_map %>% filter(to_chr %in% valid_chr)
 
 
+# Generate title from BAM input file
+chunks <- bam_file %>%
+	str_split("[/_]") %>%
+	unlist() %>%
+	str_remove_all("(len|step|\\.bam)")
+title <- sprintf("Reference: %s (%s); rDNA fragments from sliding windows (length = %s bp, step size = %s bp)",
+	str_to_title(chunks[3]), chunks[4], chunks[7], chunks[8])
+
+
 # Save as PDF
 pdf(pdf_file)
-pdf("~/Desktop/test.pdf")
 circos.initializeWithIdeogram(
 	df_cyto,
 	chromosome.index = df_size$name,
@@ -82,6 +90,7 @@ circos.initializeWithIdeogram(
 circos.genomicLink(
 	df_map[1:3], df_map[4:6],
 	col = rgb(0, 0, 0, max = 255, alpha = 20), border = "black", lwd = 0.01)
+title(title, cex.main = 0.65)
 dev.off()
 
 
@@ -94,4 +103,5 @@ circos.initializeWithIdeogram(
 circos.genomicLink(
 	df_map[1:3], df_map[4:6],
 	col = rgb(0, 0, 0, max = 255, alpha = 20), border = "black", lwd = 0.01)
+title(title, cex.main = 0.65)
 dev.off()

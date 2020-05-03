@@ -11,7 +11,11 @@ configfile: "workflow/config.yaml"
 
 
 # Include specific rules
-#include: "rules/download_files.smk"
+# Some rules from `rules/download_files.smk` are very slow (see the rules
+# file for details, linking to a GH issue); it is recommended to comment out
+# the `include: "rules/download_files.smk"` line after downloading all
+# necessary files
+include: "rules/download_files.smk"
 include: "rules/make_reference.smk"
 include: "rules/create_align_rDNA_frags.smk"
 include: "rules/postprocessing.smk"

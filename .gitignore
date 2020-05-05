@@ -3,6 +3,6 @@
 01_bowtie2_ref
 02_rDNA_frags
 03_alignment
-04_coverage_tracks
 logs
 *.pdf
+.DS_Store

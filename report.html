@@ -346,7 +346,7 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
     <nav class="navbar fixed-top navbar-dark bg-dark flex-md-nowrap p-0 shadow">
       <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Snakemake Report</a>
       <ul class="nav navbar-nav navbar-right" style="padding-right: 10px;">
-        <li class="text-white">Sat May  2 00:44:32 2020 AEST</li>
+        <li class="text-white">Tue May  5 18:03:24 2020 AEST</li>
         <li><a class="text-white" href="https://snakemake.readthedocs.io">Snakemake 5.7.1</a></li>
       </ul>
       <!--<input id="searchbar" class="invisible form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">-->
@@ -513,7 +513,9 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
 66
 67
 68
-69</pre></div></td><td class="code"><div class="source"><pre><span></span><code><span class="c1"># Sequence data</span>
+69
+70
+71</pre></div></td><td class="code"><div class="source"><pre><span></span><code><span class="c1"># Sequence data</span>
 <span class="nt">data</span><span class="p">:</span>
     <span class="nt">mouse</span><span class="p">:</span>
         <span class="nt">Ensembl</span><span class="p">:</span>
@@ -545,8 +547,9 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
         <span class="nt">GenBank</span><span class="p">:</span>
             <span class="nt">accession_no</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">BK000964.3</span>
         <span class="nt">UCSC</span><span class="p">:</span>
-            <span class="nt">base_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hgdownload.cse.ucsc.edu/goldenPath/mm10/database</span>
-            <span class="nt">cytoband</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">cytoBand.txt.gz</span>
+            <span class="nt">base_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hgdownload.cse.ucsc.edu/goldenPath/mm10</span>
+            <span class="nt">cytoband</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">database/cytoBand.txt.gz</span>
+            <span class="nt">repeatmasker</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bigZips/chromOut.tar.gz</span>
     <span class="nt">human</span><span class="p">:</span>
         <span class="nt">Ensembl</span><span class="p">:</span>
             <span class="nt">base_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ftp://ftp.ensembl.org/pub/release-99/fasta/homo_sapiens/dna</span>
@@ -580,8 +583,9 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
         <span class="nt">GenBank</span><span class="p">:</span>
             <span class="nt">accession_no</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">U13369.1</span>
         <span class="nt">UCSC</span><span class="p">:</span>
-            <span class="nt">base_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hgdownload.cse.ucsc.edu/goldenPath/hg38/database</span>
-            <span class="nt">cytoband</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">cytoBand.txt.gz</span>
+            <span class="nt">base_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hgdownload.cse.ucsc.edu/goldenPath/hg38</span>
+            <span class="nt">cytoband</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">database/cytoBand.txt.gz</span>
+            <span class="nt">repeatmasker</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bigZips/hg38.fa.out.gz</span>
 </code></pre></div>
 </td></tr></table>
                     </div>
@@ -608,34 +612,70 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
             <tbody>
               <tr>
                 <td>create_bw_coverage_track</td>
-                <td>4</td>
+                <td>2</td>
                 <td>
-                  <a data-toggle="collapse" role="button" href="#output-901fa54b-5cba-498c-a9bf-7d91b5d0eef3" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
-                  <div class="collapse" id="output-901fa54b-5cba-498c-a9bf-7d91b5d0eef3">
+                  <a data-toggle="collapse" role="button" href="#output-42d60a62-f7c8-4991-8ab7-8e0828435e99" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
+                  <div class="collapse" id="output-42d60a62-f7c8-4991-8ab7-8e0828435e99">
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item">04_coverage_tracks/human/GRCh38/rDNA_frags_len100_step100.bw</li>
-                      <li class="list-group-item">04_coverage_tracks/human/GRCh38/rDNA_frags_len500_step500.bw</li>
-                      <li class="list-group-item">04_coverage_tracks/human/GRCh38/rDNA_frags_len1000_step1000.bw</li>
-                      <li class="list-group-item">04_coverage_tracks/mouse/GRCm38/rDNA_frags_len100_step100.bw</li>
-                      <li class="list-group-item">04_coverage_tracks/mouse/GRCm38/rDNA_frags_len500_step500.bw</li>
-                      <li class="list-group-item">04_coverage_tracks/mouse/GRCm38/rDNA_frags_len1000_step1000.bw</li>
+                      <li class="list-group-item">04_output_data/human/GRCh38/rDNA_frags_len100_step100.bw</li>
+                      <li class="list-group-item">04_output_data/human/GRCh38/rDNA_frags_len500_step500.bw</li>
+                      <li class="list-group-item">04_output_data/human/GRCh38/rDNA_frags_len1000_step1000.bw</li>
+                      <li class="list-group-item">04_output_data/mouse/GRCm38/rDNA_frags_len100_step100.bw</li>
+                      <li class="list-group-item">04_output_data/mouse/GRCm38/rDNA_frags_len500_step500.bw</li>
+                      <li class="list-group-item">04_output_data/mouse/GRCm38/rDNA_frags_len1000_step1000.bw</li>
                     </ul>
                   </div>
                 </td>
                 <td></td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#conda-env-901fa54b-5cba-498c-a9bf-7d91b5d0eef3" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="conda-env-901fa54b-5cba-498c-a9bf-7d91b5d0eef3">
+                    <a data-toggle="collapse" role="button" href="#conda-env-42d60a62-f7c8-4991-8ab7-8e0828435e99" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="conda-env-42d60a62-f7c8-4991-8ab7-8e0828435e99">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">deeptools</li>
                       </ul>
                     </div>
                 </td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#code-901fa54b-5cba-498c-a9bf-7d91b5d0eef3" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="code-901fa54b-5cba-498c-a9bf-7d91b5d0eef3">
+                    <a data-toggle="collapse" role="button" href="#code-42d60a62-f7c8-4991-8ab7-8e0828435e99" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="code-42d60a62-f7c8-4991-8ab7-8e0828435e99">
                       <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="source"><pre><span></span><code>            bamCoverage -b <span class="o">{</span>input<span class="o">[</span><span class="m">0</span><span class="o">]}</span> -o <span class="o">{</span>output<span class="o">}</span> <span class="m">2</span>&gt;<span class="o">{</span>log<span class="o">}</span> <span class="m">1</span>&gt;<span class="p">&amp;</span><span class="m">2</span>
+        
+</code></pre></div>
+</td></tr></table>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td>create_bed_from_bam</td>
+                <td>2</td>
+                <td>
+                  <a data-toggle="collapse" role="button" href="#output-9ea777c9-534c-4ed5-9fdb-54937c49d177" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
+                  <div class="collapse" id="output-9ea777c9-534c-4ed5-9fdb-54937c49d177">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">04_output_data/human/GRCh38/rDNA_frags_len100_step100.bed</li>
+                      <li class="list-group-item">04_output_data/human/GRCh38/rDNA_frags_len500_step500.bed</li>
+                      <li class="list-group-item">04_output_data/human/GRCh38/rDNA_frags_len1000_step1000.bed</li>
+                      <li class="list-group-item">04_output_data/mouse/GRCm38/rDNA_frags_len100_step100.bed</li>
+                      <li class="list-group-item">04_output_data/mouse/GRCm38/rDNA_frags_len500_step500.bed</li>
+                      <li class="list-group-item">04_output_data/mouse/GRCm38/rDNA_frags_len1000_step1000.bed</li>
+                    </ul>
+                  </div>
+                </td>
+                <td></td>
+                <td>
+                    <a data-toggle="collapse" role="button" href="#conda-env-9ea777c9-534c-4ed5-9fdb-54937c49d177" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="conda-env-9ea777c9-534c-4ed5-9fdb-54937c49d177">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">bedtools</li>
+                      </ul>
+                    </div>
+                </td>
+                <td>
+                    <a data-toggle="collapse" role="button" href="#code-9ea777c9-534c-4ed5-9fdb-54937c49d177" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="code-9ea777c9-534c-4ed5-9fdb-54937c49d177">
+                      <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="source"><pre><span></span><code>            bedtools bamtobed -i <span class="o">{</span>input<span class="o">}</span> -ed -bed12 &gt; <span class="o">{</span>output<span class="o">}</span>
         
 </code></pre></div>
 </td></tr></table>
@@ -646,8 +686,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 <td>generate_circos_plot</td>
                 <td>2</td>
                 <td>
-                  <a data-toggle="collapse" role="button" href="#output-03516688-5837-412d-b183-8c54b039ddf8" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
-                  <div class="collapse" id="output-03516688-5837-412d-b183-8c54b039ddf8">
+                  <a data-toggle="collapse" role="button" href="#output-c7c83d28-22b2-405c-baa9-4f547c79456a" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
+                  <div class="collapse" id="output-c7c83d28-22b2-405c-baa9-4f547c79456a">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">05_circos_plots/human/GRCh38/circos_rDNA_frags_len100_step100.pdf</li>
                       <li class="list-group-item">05_circos_plots/human/GRCh38/circos_rDNA_frags_len100_step100.png</li>
@@ -666,8 +706,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 </td>
                 <td></td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#conda-env-03516688-5837-412d-b183-8c54b039ddf8" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="conda-env-03516688-5837-412d-b183-8c54b039ddf8">
+                    <a data-toggle="collapse" role="button" href="#conda-env-c7c83d28-22b2-405c-baa9-4f547c79456a" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="conda-env-c7c83d28-22b2-405c-baa9-4f547c79456a">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">r=3.6</li>
                         <li class="list-group-item">r-tidyverse=1.2.1</li>
@@ -678,105 +718,115 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                     </div>
                 </td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#code-03516688-5837-412d-b183-8c54b039ddf8" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="code-03516688-5837-412d-b183-8c54b039ddf8">
-                      <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97</pre></div></td><td class="code"><div class="source"><pre><span></span><code><span class="c1"># R script to generate Circos plot based on BAM and fa.gz files</span>
+                    <a data-toggle="collapse" role="button" href="#code-c7c83d28-22b2-405c-baa9-4f547c79456a" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="code-c7c83d28-22b2-405c-baa9-4f547c79456a">
+                      <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107</pre></div></td><td class="code"><div class="source"><pre><span></span><code><span class="c1"># R script to generate Circos plot based on BAM and fa.gz files</span>
 
 <span class="c1"># Author: Maurits Evers</span>
 
@@ -850,9 +900,17 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
 <span class="n">df_map</span> <span class="o">&lt;-</span> <span class="n">df_map</span> <span class="o">%&gt;%</span> <span class="nf">filter</span><span class="p">(</span><span class="n">to_chr</span> <span class="o">%in%</span> <span class="n">valid_chr</span><span class="p">)</span>
 
 
+<span class="c1"># Generate title from BAM input file</span>
+<span class="n">chunks</span> <span class="o">&lt;-</span> <span class="n">bam_file</span> <span class="o">%&gt;%</span>
+	<span class="nf">str_split</span><span class="p">(</span><span class="s">&quot;[/_]&quot;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+	<span class="nf">unlist</span><span class="p">()</span> <span class="o">%&gt;%</span>
+	<span class="nf">str_remove_all</span><span class="p">(</span><span class="s">&quot;(len|step|\\.bam)&quot;</span><span class="p">)</span>
+<span class="n">title</span> <span class="o">&lt;-</span> <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;Reference: %s (%s); rDNA fragments from sliding windows (length = %s bp, step size = %s bp)&quot;</span><span class="p">,</span>
+	<span class="nf">str_to_title</span><span class="p">(</span><span class="n">chunks</span><span class="p">[</span><span class="m">3</span><span class="p">]),</span> <span class="n">chunks</span><span class="p">[</span><span class="m">4</span><span class="p">],</span> <span class="n">chunks</span><span class="p">[</span><span class="m">7</span><span class="p">],</span> <span class="n">chunks</span><span class="p">[</span><span class="m">8</span><span class="p">])</span>
+
+
 <span class="c1"># Save as PDF</span>
 <span class="nf">pdf</span><span class="p">(</span><span class="n">pdf_file</span><span class="p">)</span>
-<span class="nf">pdf</span><span class="p">(</span><span class="s">&quot;~/Desktop/test.pdf&quot;</span><span class="p">)</span>
 <span class="nf">circos.initializeWithIdeogram</span><span class="p">(</span>
 	<span class="n">df_cyto</span><span class="p">,</span>
 	<span class="n">chromosome.index</span> <span class="o">=</span> <span class="n">df_size</span><span class="o">$</span><span class="n">name</span><span class="p">,</span>
@@ -860,6 +918,7 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
 <span class="nf">circos.genomicLink</span><span class="p">(</span>
 	<span class="n">df_map</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">],</span> <span class="n">df_map</span><span class="p">[</span><span class="m">4</span><span class="o">:</span><span class="m">6</span><span class="p">],</span>
 	<span class="n">col</span> <span class="o">=</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="n">max</span> <span class="o">=</span> <span class="m">255</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="m">20</span><span class="p">),</span> <span class="n">border</span> <span class="o">=</span> <span class="s">&quot;black&quot;</span><span class="p">,</span> <span class="n">lwd</span> <span class="o">=</span> <span class="m">0.01</span><span class="p">)</span>
+<span class="nf">title</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">cex.main</span> <span class="o">=</span> <span class="m">0.65</span><span class="p">)</span>
 <span class="nf">dev.off</span><span class="p">()</span>
 
 
@@ -872,6 +931,7 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
 <span class="nf">circos.genomicLink</span><span class="p">(</span>
 	<span class="n">df_map</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">],</span> <span class="n">df_map</span><span class="p">[</span><span class="m">4</span><span class="o">:</span><span class="m">6</span><span class="p">],</span>
 	<span class="n">col</span> <span class="o">=</span> <span class="nf">rgb</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="n">max</span> <span class="o">=</span> <span class="m">255</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="m">20</span><span class="p">),</span> <span class="n">border</span> <span class="o">=</span> <span class="s">&quot;black&quot;</span><span class="p">,</span> <span class="n">lwd</span> <span class="o">=</span> <span class="m">0.01</span><span class="p">)</span>
+<span class="nf">title</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">cex.main</span> <span class="o">=</span> <span class="m">0.65</span><span class="p">)</span>
 <span class="nf">dev.off</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table>
@@ -882,8 +942,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 <td>sort_BAM_alignment</td>
                 <td>2</td>
                 <td>
-                  <a data-toggle="collapse" role="button" href="#output-08abdb7f-cc4a-4654-a7f9-3a35b3a177a4" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
-                  <div class="collapse" id="output-08abdb7f-cc4a-4654-a7f9-3a35b3a177a4">
+                  <a data-toggle="collapse" role="button" href="#output-84ed7ea1-9ceb-4a38-b339-7ef0e81eab5f" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
+                  <div class="collapse" id="output-84ed7ea1-9ceb-4a38-b339-7ef0e81eab5f">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">03_alignment/human/GRCh38/rDNA_frags_len100_step100.bam</li>
                       <li class="list-group-item">03_alignment/human/GRCh38/rDNA_frags_len500_step500.bam</li>
@@ -896,16 +956,16 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 </td>
                 <td></td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#conda-env-08abdb7f-cc4a-4654-a7f9-3a35b3a177a4" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="conda-env-08abdb7f-cc4a-4654-a7f9-3a35b3a177a4">
+                    <a data-toggle="collapse" role="button" href="#conda-env-84ed7ea1-9ceb-4a38-b339-7ef0e81eab5f" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="conda-env-84ed7ea1-9ceb-4a38-b339-7ef0e81eab5f">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">samtools</li>
                       </ul>
                     </div>
                 </td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#code-08abdb7f-cc4a-4654-a7f9-3a35b3a177a4" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="code-08abdb7f-cc4a-4654-a7f9-3a35b3a177a4">
+                    <a data-toggle="collapse" role="button" href="#code-84ed7ea1-9ceb-4a38-b339-7ef0e81eab5f" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="code-84ed7ea1-9ceb-4a38-b339-7ef0e81eab5f">
                       <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="source"><pre><span></span><code>            samtools sort -@ <span class="o">{</span>threads<span class="o">}</span> -o <span class="o">{</span>output<span class="o">}</span> <span class="o">{</span>input<span class="o">}</span>
         
@@ -918,8 +978,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 <td>index_bam_file</td>
                 <td>6</td>
                 <td>
-                  <a data-toggle="collapse" role="button" href="#output-8128a5d9-b550-4e64-b6c8-90ab24d042b2" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
-                  <div class="collapse" id="output-8128a5d9-b550-4e64-b6c8-90ab24d042b2">
+                  <a data-toggle="collapse" role="button" href="#output-21152b26-0a38-41d3-9edd-af81cfe29184" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
+                  <div class="collapse" id="output-21152b26-0a38-41d3-9edd-af81cfe29184">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">03_alignment/human/GRCh38/rDNA_frags_len100_step100.bam.bai</li>
                       <li class="list-group-item">03_alignment/human/GRCh38/rDNA_frags_len500_step500.bam.bai</li>
@@ -932,16 +992,16 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 </td>
                 <td></td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#conda-env-8128a5d9-b550-4e64-b6c8-90ab24d042b2" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="conda-env-8128a5d9-b550-4e64-b6c8-90ab24d042b2">
+                    <a data-toggle="collapse" role="button" href="#conda-env-21152b26-0a38-41d3-9edd-af81cfe29184" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="conda-env-21152b26-0a38-41d3-9edd-af81cfe29184">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">samtools</li>
                       </ul>
                     </div>
                 </td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#code-8128a5d9-b550-4e64-b6c8-90ab24d042b2" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="code-8128a5d9-b550-4e64-b6c8-90ab24d042b2">
+                    <a data-toggle="collapse" role="button" href="#code-21152b26-0a38-41d3-9edd-af81cfe29184" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="code-21152b26-0a38-41d3-9edd-af81cfe29184">
                       <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="source"><pre><span></span><code>            samtools index <span class="o">{</span>input<span class="o">}</span>
         
@@ -954,8 +1014,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 <td>download_GenBank_rDNA</td>
                 <td>2</td>
                 <td>
-                  <a data-toggle="collapse" role="button" href="#output-10c7a247-9557-4456-88a0-bbd6b4eaf77e" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
-                  <div class="collapse" id="output-10c7a247-9557-4456-88a0-bbd6b4eaf77e">
+                  <a data-toggle="collapse" role="button" href="#output-8cd67831-06be-4356-81eb-61a6d0888582" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
+                  <div class="collapse" id="output-8cd67831-06be-4356-81eb-61a6d0888582">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">00_ref_sequences/human/rDNA_GenBank/U13369.1.fa.gz</li>
                       <li class="list-group-item">00_ref_sequences/mouse/rDNA_GenBank/BK000964.3.fa.gz</li>
@@ -964,16 +1024,16 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 </td>
                 <td></td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#conda-env-10c7a247-9557-4456-88a0-bbd6b4eaf77e" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="conda-env-10c7a247-9557-4456-88a0-bbd6b4eaf77e">
+                    <a data-toggle="collapse" role="button" href="#conda-env-8cd67831-06be-4356-81eb-61a6d0888582" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="conda-env-8cd67831-06be-4356-81eb-61a6d0888582">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">samtools</li>
                       </ul>
                     </div>
                 </td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#code-10c7a247-9557-4456-88a0-bbd6b4eaf77e" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="code-10c7a247-9557-4456-88a0-bbd6b4eaf77e">
+                    <a data-toggle="collapse" role="button" href="#code-8cd67831-06be-4356-81eb-61a6d0888582" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="code-8cd67831-06be-4356-81eb-61a6d0888582">
                       <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="source"><pre><span></span><code>            cat <span class="o">{</span>input<span class="o">}</span> <span class="p">|</span> bgzip &gt; <span class="o">{</span>output<span class="o">}</span>
         
@@ -986,8 +1046,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 <td>download_UCSC_cytoband_data</td>
                 <td>2</td>
                 <td>
-                  <a data-toggle="collapse" role="button" href="#output-f269beba-0289-44ec-90b0-0e05de50494e" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
-                  <div class="collapse" id="output-f269beba-0289-44ec-90b0-0e05de50494e">
+                  <a data-toggle="collapse" role="button" href="#output-959b416a-de0f-43be-9a75-515c3891f286" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
+                  <div class="collapse" id="output-959b416a-de0f-43be-9a75-515c3891f286">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">05_circos_plots/human/GRCh38/cytoband.txt.gz</li>
                       <li class="list-group-item">05_circos_plots/mouse/GRCm38/cytoband.txt.gz</li>
@@ -998,8 +1058,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 <td>
                 </td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#code-f269beba-0289-44ec-90b0-0e05de50494e" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="code-f269beba-0289-44ec-90b0-0e05de50494e">
+                    <a data-toggle="collapse" role="button" href="#code-959b416a-de0f-43be-9a75-515c3891f286" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="code-959b416a-de0f-43be-9a75-515c3891f286">
                       <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="source"><pre><span></span><code>            mv <span class="o">{</span>input<span class="o">}</span> <span class="o">{</span>output<span class="o">}</span>
         
@@ -1012,8 +1072,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 <td>align_rDNA_frags</td>
                 <td>2</td>
                 <td>
-                  <a data-toggle="collapse" role="button" href="#output-61b00a0b-bae3-4886-9033-f6d540794a6b" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
-                  <div class="collapse" id="output-61b00a0b-bae3-4886-9033-f6d540794a6b">
+                  <a data-toggle="collapse" role="button" href="#output-cdd4a497-e04e-4a4d-8d26-71ba1f237866" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
+                  <div class="collapse" id="output-cdd4a497-e04e-4a4d-8d26-71ba1f237866">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">03_alignment/human/GRCh38/unsorted_rDNA_frags_len100_step100.bam</li>
                       <li class="list-group-item">03_alignment/human/GRCh38/unsorted_rDNA_frags_len500_step500.bam</li>
@@ -1026,8 +1086,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 </td>
                 <td></td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#conda-env-61b00a0b-bae3-4886-9033-f6d540794a6b" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="conda-env-61b00a0b-bae3-4886-9033-f6d540794a6b">
+                    <a data-toggle="collapse" role="button" href="#conda-env-cdd4a497-e04e-4a4d-8d26-71ba1f237866" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="conda-env-cdd4a497-e04e-4a4d-8d26-71ba1f237866">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">bowtie2</li>
                         <li class="list-group-item">samtools</li>
@@ -1035,8 +1095,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                     </div>
                 </td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#code-61b00a0b-bae3-4886-9033-f6d540794a6b" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="code-61b00a0b-bae3-4886-9033-f6d540794a6b">
+                    <a data-toggle="collapse" role="button" href="#code-cdd4a497-e04e-4a4d-8d26-71ba1f237866" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="code-cdd4a497-e04e-4a4d-8d26-71ba1f237866">
                       <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="source"><pre><span></span><code>            bowtie2             -x <span class="o">{</span>params.index_basename<span class="o">}</span>             -U <span class="o">{</span>input.frags<span class="o">}</span>             -f             -N <span class="m">0</span>             --end-to-end             --all             --threads <span class="o">{</span>threads<span class="o">}</span>             <span class="m">2</span>&gt; <span class="o">{</span>log<span class="o">}</span>             <span class="p">|</span> samtools view -bSh -@ <span class="o">{</span>threads<span class="o">}</span> -F4 - &gt; <span class="o">{</span>output<span class="o">}</span>
         
@@ -1049,8 +1109,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 <td>make_genome_ref_index</td>
                 <td>2</td>
                 <td>
-                  <a data-toggle="collapse" role="button" href="#output-02402cdf-3240-44ad-8590-c2b0056a5e9c" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
-                  <div class="collapse" id="output-02402cdf-3240-44ad-8590-c2b0056a5e9c">
+                  <a data-toggle="collapse" role="button" href="#output-c811783b-121c-47ed-abd0-1f283f15afec" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
+                  <div class="collapse" id="output-c811783b-121c-47ed-abd0-1f283f15afec">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">01_bowtie2_ref/human/GRCh38.1.bt2</li>
                       <li class="list-group-item">01_bowtie2_ref/human/GRCh38.2.bt2</li>
@@ -1069,8 +1129,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 </td>
                 <td></td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#conda-env-02402cdf-3240-44ad-8590-c2b0056a5e9c" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="conda-env-02402cdf-3240-44ad-8590-c2b0056a5e9c">
+                    <a data-toggle="collapse" role="button" href="#conda-env-c811783b-121c-47ed-abd0-1f283f15afec" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="conda-env-c811783b-121c-47ed-abd0-1f283f15afec">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">bowtie2</li>
                         <li class="list-group-item">samtools</li>
@@ -1078,8 +1138,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                     </div>
                 </td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#code-02402cdf-3240-44ad-8590-c2b0056a5e9c" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="code-02402cdf-3240-44ad-8590-c2b0056a5e9c">
+                    <a data-toggle="collapse" role="button" href="#code-c811783b-121c-47ed-abd0-1f283f15afec" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="code-c811783b-121c-47ed-abd0-1f283f15afec">
                       <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="source"><pre><span></span><code>            bowtie2-build --threads <span class="o">{</span>threads<span class="o">}</span>             <span class="o">{</span>input<span class="o">}</span> <span class="o">{</span>params.index_basename<span class="o">}</span> &gt; <span class="o">{</span>log<span class="o">}</span>
         
@@ -1092,8 +1152,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 <td>create_rDNA_frags</td>
                 <td>2</td>
                 <td>
-                  <a data-toggle="collapse" role="button" href="#output-8d9611db-d1f8-484b-bd1b-726cf23618aa" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
-                  <div class="collapse" id="output-8d9611db-d1f8-484b-bd1b-726cf23618aa">
+                  <a data-toggle="collapse" role="button" href="#output-9e48da87-7641-4911-9701-561d086ef62d" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
+                  <div class="collapse" id="output-9e48da87-7641-4911-9701-561d086ef62d">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">02_rDNA_frags/human/rDNA_frags_len100_step100.fa.gz</li>
                       <li class="list-group-item">02_rDNA_frags/human/rDNA_frags_len500_step500.fa.gz</li>
@@ -1106,8 +1166,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 </td>
                 <td></td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#conda-env-8d9611db-d1f8-484b-bd1b-726cf23618aa" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="conda-env-8d9611db-d1f8-484b-bd1b-726cf23618aa">
+                    <a data-toggle="collapse" role="button" href="#conda-env-9e48da87-7641-4911-9701-561d086ef62d" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="conda-env-9e48da87-7641-4911-9701-561d086ef62d">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">python=3.7</li>
                         <li class="list-group-item">biopython</li>
@@ -1116,8 +1176,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                     </div>
                 </td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#code-8d9611db-d1f8-484b-bd1b-726cf23618aa" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="code-8d9611db-d1f8-484b-bd1b-726cf23618aa">
+                    <a data-toggle="collapse" role="button" href="#code-9e48da87-7641-4911-9701-561d086ef62d" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="code-9e48da87-7641-4911-9701-561d086ef62d">
                       <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -1222,8 +1282,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 <td>concatenate_genome_ref</td>
                 <td>2</td>
                 <td>
-                  <a data-toggle="collapse" role="button" href="#output-3b8cabd1-9eed-4d4e-8921-1c49f72724a4" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
-                  <div class="collapse" id="output-3b8cabd1-9eed-4d4e-8921-1c49f72724a4">
+                  <a data-toggle="collapse" role="button" href="#output-40af4304-2752-4b62-b510-03953109ccf7" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
+                  <div class="collapse" id="output-40af4304-2752-4b62-b510-03953109ccf7">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">01_bowtie2_ref/human/GRCh38.fa.gz</li>
                       <li class="list-group-item">01_bowtie2_ref/mouse/GRCm38.fa.gz</li>
@@ -1234,8 +1294,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 <td>
                 </td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#code-3b8cabd1-9eed-4d4e-8921-1c49f72724a4" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="code-3b8cabd1-9eed-4d4e-8921-1c49f72724a4">
+                    <a data-toggle="collapse" role="button" href="#code-40af4304-2752-4b62-b510-03953109ccf7" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="code-40af4304-2752-4b62-b510-03953109ccf7">
                       <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="source"><pre><span></span><code>            cat <span class="o">{</span>input.genome<span class="o">}</span> &gt; <span class="o">{</span>output<span class="o">}</span>
         
@@ -1248,8 +1308,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 <td>download_genome_ref_units</td>
                 <td>47</td>
                 <td>
-                  <a data-toggle="collapse" role="button" href="#output-cd1baa28-ad26-435f-8713-8593f2ab9a56" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
-                  <div class="collapse" id="output-cd1baa28-ad26-435f-8713-8593f2ab9a56">
+                  <a data-toggle="collapse" role="button" href="#output-f59b33aa-0934-4283-bdfd-3a3549f9c717" aria-expanded="false" aria-controls="collapse-output"><span data-feather="plus-circle"></span></a>
+                  <div class="collapse" id="output-f59b33aa-0934-4283-bdfd-3a3549f9c717">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">00_ref_sequences/human/chr_Ensembl/Homo_sapiens.GRCh38.dna.chromosome.1.fa.gz</li>
                       <li class="list-group-item">00_ref_sequences/human/chr_Ensembl/Homo_sapiens.GRCh38.dna.chromosome.2.fa.gz</li>
@@ -1305,8 +1365,8 @@ table.dataTable tbody>tr.selected,table.dataTable tbody>tr>.selected{background-
                 <td>
                 </td>
                 <td>
-                    <a data-toggle="collapse" role="button" href="#code-cd1baa28-ad26-435f-8713-8593f2ab9a56" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
-                    <div class="collapse" id="code-cd1baa28-ad26-435f-8713-8593f2ab9a56">
+                    <a data-toggle="collapse" role="button" href="#code-f59b33aa-0934-4283-bdfd-3a3549f9c717" aria-expanded="false" aria-controls="collapse-env"><span data-feather="plus-circle"></span></a>
+                    <div class="collapse" id="code-f59b33aa-0934-4283-bdfd-3a3549f9c717">
                       <table class="sourcetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="source"><pre><span></span><code>            mv <span class="o">{</span>input<span class="o">}</span> <span class="o">{</span>output<span class="o">}</span>
         
@@ -1837,7 +1897,7 @@ action:function(){this[this.select.items()+"s"]().select()}},selectNone:{text:t(
     <script>
       var rulegraph_spec = {
         "$schema": "https://vega.github.io/schema/vega/v3.json",
-        "width": 526.0,
+        "width": 736.0,
         "height": 542.0,
         "padding": 0,
         "autosize": "none",
@@ -1868,11 +1928,11 @@ action:function(){this[this.select.items()+"s"]().select()}},selectNone:{text:t(
         "data": [
           {
             "name": "node-data",
-            "values": [{'rule': 'align_rDNA_frags', 'fx': 381.0, 'fy': 234.0}, {'rule': 'all', 'fx': 300.0, 'fy': 522.0}, {'rule': 'concatenate_genome_ref', 'fx': 381.0, 'fy': 90.0}, {'rule': 'create_bw_coverage_track', 'fx': 406.0, 'fy': 450.0}, {'rule': 'create_rDNA_frags', 'fx': 158.0, 'fy': 162.0}, {'rule': 'download_GenBank_rDNA', 'fx': 115.0, 'fy': 90.0}, {'rule': 'download_UCSC_cytoband_data', 'fx': 194.0, 'fy': 378.0}, {'rule': 'download_genome_ref_units', 'fx': 381.0, 'fy': 18.0}, {'rule': 'generate_circos_plot', 'fx': 194.0, 'fy': 450.0}, {'rule': 'index_bam_file', 'fx': 406.0, 'fy': 378.0}, {'rule': 'make_genome_ref_index', 'fx': 381.0, 'fy': 162.0}, {'rule': 'sort_BAM_alignment', 'fx': 393.0, 'fy': 306.0}]
+            "values": [{'rule': 'align_rDNA_frags', 'fx': 381.0, 'fy': 234.0}, {'rule': 'all', 'fx': 403.0, 'fy': 522.0}, {'rule': 'concatenate_genome_ref', 'fx': 381.0, 'fy': 90.0}, {'rule': 'create_bed_from_bam', 'fx': 616.0, 'fy': 450.0}, {'rule': 'create_bw_coverage_track', 'fx': 403.0, 'fy': 450.0}, {'rule': 'create_rDNA_frags', 'fx': 158.0, 'fy': 162.0}, {'rule': 'download_GenBank_rDNA', 'fx': 115.0, 'fy': 90.0}, {'rule': 'download_UCSC_cytoband_data', 'fx': 194.0, 'fy': 378.0}, {'rule': 'download_genome_ref_units', 'fx': 381.0, 'fy': 18.0}, {'rule': 'generate_circos_plot', 'fx': 194.0, 'fy': 450.0}, {'rule': 'index_bam_file', 'fx': 406.0, 'fy': 378.0}, {'rule': 'make_genome_ref_index', 'fx': 381.0, 'fy': 162.0}, {'rule': 'sort_BAM_alignment', 'fx': 406.0, 'fy': 306.0}]
           },
           {
             "name": "link-data",
-            "values": [{'target': 0, 'source': 11, 'value': 1}, {'target': 2, 'source': 10, 'value': 1}, {'target': 3, 'source': 1, 'value': 1}, {'target': 4, 'source': 0, 'value': 1}, {'target': 5, 'source': 8, 'value': 1}, {'target': 5, 'source': 4, 'value': 1}, {'target': 6, 'source': 8, 'value': 1}, {'target': 7, 'source': 2, 'value': 1}, {'target': 8, 'source': 1, 'value': 1}, {'target': 9, 'source': 3, 'value': 1}, {'target': 9, 'source': 8, 'value': 1}, {'target': 10, 'source': 0, 'value': 1}, {'target': 11, 'source': 3, 'value': 1}, {'target': 11, 'source': 8, 'value': 1}, {'target': 11, 'source': 9, 'value': 1}]
+            "values": [{'target': 0, 'source': 12, 'value': 1}, {'target': 2, 'source': 11, 'value': 1}, {'target': 3, 'source': 1, 'value': 1}, {'target': 4, 'source': 1, 'value': 1}, {'target': 5, 'source': 0, 'value': 1}, {'target': 6, 'source': 9, 'value': 1}, {'target': 6, 'source': 5, 'value': 1}, {'target': 7, 'source': 9, 'value': 1}, {'target': 8, 'source': 2, 'value': 1}, {'target': 9, 'source': 1, 'value': 1}, {'target': 10, 'source': 4, 'value': 1}, {'target': 10, 'source': 9, 'value': 1}, {'target': 11, 'source': 0, 'value': 1}, {'target': 12, 'source': 4, 'value': 1}, {'target': 12, 'source': 3, 'value': 1}, {'target': 12, 'source': 9, 'value': 1}, {'target': 12, 'source': 10, 'value': 1}]
           }
         ],
 
@@ -1963,7 +2023,7 @@ action:function(){this[this.select.items()+"s"]().select()}},selectNone:{text:t(
       var runtimes_spec = {
         "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
         "description": "Shows the relationship between horsepower and the numbver of cylinders using tick marks.",
-        "data": {"values": [{'rule': 'align_rDNA_frags', 'runtime': 1901.0}, {'rule': 'align_rDNA_frags', 'runtime': 8810.0}, {'rule': 'concatenate_genome_ref', 'runtime': 3.0}, {'rule': 'concatenate_genome_ref', 'runtime': 4.0}, {'rule': 'create_bw_coverage_track', 'runtime': 93.0}, {'rule': 'create_bw_coverage_track', 'runtime': 71.0}, {'rule': 'create_bw_coverage_track', 'runtime': 90.0}, {'rule': 'create_bw_coverage_track', 'runtime': 64.0}, {'rule': 'create_rDNA_frags', 'runtime': 8.0}, {'rule': 'create_rDNA_frags', 'runtime': 9.0}, {'rule': 'download_GenBank_rDNA', 'runtime': 8.0}, {'rule': 'download_GenBank_rDNA', 'runtime': 8.0}, {'rule': 'download_UCSC_cytoband_data', 'runtime': 4.0}, {'rule': 'download_UCSC_cytoband_data', 'runtime': 4.0}, {'rule': 'download_genome_ref_units', 'runtime': 65.0}, {'rule': 'download_genome_ref_units', 'runtime': 63.0}, {'rule': 'download_genome_ref_units', 'runtime': 49.0}, {'rule': 'download_genome_ref_units', 'runtime': 51.0}, {'rule': 'download_genome_ref_units', 'runtime': 53.0}, {'rule': 'download_genome_ref_units', 'runtime': 42.0}, {'rule': 'download_genome_ref_units', 'runtime': 44.0}, {'rule': 'download_genome_ref_units', 'runtime': 40.0}, {'rule': 'download_genome_ref_units', 'runtime': 36.0}, {'rule': 'download_genome_ref_units', 'runtime': 37.0}, {'rule': 'download_genome_ref_units', 'runtime': 36.0}, {'rule': 'download_genome_ref_units', 'runtime': 28.0}, {'rule': 'download_genome_ref_units', 'runtime': 28.0}, {'rule': 'download_genome_ref_units', 'runtime': 32.0}, {'rule': 'download_genome_ref_units', 'runtime': 26.0}, {'rule': 'download_genome_ref_units', 'runtime': 20.0}, {'rule': 'download_genome_ref_units', 'runtime': 25.0}, {'rule': 'download_genome_ref_units', 'runtime': 24.0}, {'rule': 'download_genome_ref_units', 'runtime': 22.0}, {'rule': 'download_genome_ref_units', 'runtime': 23.0}, {'rule': 'download_genome_ref_units', 'runtime': 15.0}, {'rule': 'download_genome_ref_units', 'runtime': 15.0}, {'rule': 'download_genome_ref_units', 'runtime': 32.0}, {'rule': 'download_genome_ref_units', 'runtime': 12.0}, {'rule': 'download_genome_ref_units', 'runtime': 7.0}, {'rule': 'download_genome_ref_units', 'runtime': 46.0}, {'rule': 'download_genome_ref_units', 'runtime': 38.0}, {'rule': 'download_genome_ref_units', 'runtime': 37.0}, {'rule': 'download_genome_ref_units', 'runtime': 37.0}, {'rule': 'download_genome_ref_units', 'runtime': 36.0}, {'rule': 'download_genome_ref_units', 'runtime': 38.0}, {'rule': 'download_genome_ref_units', 'runtime': 41.0}, {'rule': 'download_genome_ref_units', 'runtime': 24.0}, {'rule': 'download_genome_ref_units', 'runtime': 37.0}, {'rule': 'download_genome_ref_units', 'runtime': 33.0}, {'rule': 'download_genome_ref_units', 'runtime': 33.0}, {'rule': 'download_genome_ref_units', 'runtime': 33.0}, {'rule': 'download_genome_ref_units', 'runtime': 47.0}, {'rule': 'download_genome_ref_units', 'runtime': 33.0}, {'rule': 'download_genome_ref_units', 'runtime': 26.0}, {'rule': 'download_genome_ref_units', 'runtime': 28.0}, {'rule': 'download_genome_ref_units', 'runtime': 28.0}, {'rule': 'download_genome_ref_units', 'runtime': 56.0}, {'rule': 'download_genome_ref_units', 'runtime': 16.0}, {'rule': 'download_genome_ref_units', 'runtime': 44.0}, {'rule': 'download_genome_ref_units', 'runtime': 36.0}, {'rule': 'download_genome_ref_units', 'runtime': 7.0}, {'rule': 'generate_circos_plot', 'runtime': 504.0}, {'rule': 'generate_circos_plot', 'runtime': 1324.0}, {'rule': 'index_bam_file', 'runtime': 4.0}, {'rule': 'index_bam_file', 'runtime': 3.0}, {'rule': 'index_bam_file', 'runtime': 6.0}, {'rule': 'index_bam_file', 'runtime': 4.0}, {'rule': 'index_bam_file', 'runtime': 6.0}, {'rule': 'index_bam_file', 'runtime': 6.0}, {'rule': 'make_genome_ref_index', 'runtime': 7266.0}, {'rule': 'make_genome_ref_index', 'runtime': 6410.0}, {'rule': 'sort_BAM_alignment', 'runtime': 5.0}, {'rule': 'sort_BAM_alignment', 'runtime': 16.0}]},
+        "data": {"values": [{'rule': 'align_rDNA_frags', 'runtime': 1901.0}, {'rule': 'align_rDNA_frags', 'runtime': 8810.0}, {'rule': 'concatenate_genome_ref', 'runtime': 3.0}, {'rule': 'concatenate_genome_ref', 'runtime': 4.0}, {'rule': 'create_bed_from_bam', 'runtime': 80.0}, {'rule': 'create_bed_from_bam', 'runtime': 84.0}, {'rule': 'create_bw_coverage_track', 'runtime': 131.0}, {'rule': 'create_bw_coverage_track', 'runtime': 135.0}, {'rule': 'create_rDNA_frags', 'runtime': 8.0}, {'rule': 'create_rDNA_frags', 'runtime': 9.0}, {'rule': 'download_GenBank_rDNA', 'runtime': 8.0}, {'rule': 'download_GenBank_rDNA', 'runtime': 8.0}, {'rule': 'download_UCSC_cytoband_data', 'runtime': 4.0}, {'rule': 'download_UCSC_cytoband_data', 'runtime': 4.0}, {'rule': 'download_genome_ref_units', 'runtime': 65.0}, {'rule': 'download_genome_ref_units', 'runtime': 63.0}, {'rule': 'download_genome_ref_units', 'runtime': 49.0}, {'rule': 'download_genome_ref_units', 'runtime': 51.0}, {'rule': 'download_genome_ref_units', 'runtime': 53.0}, {'rule': 'download_genome_ref_units', 'runtime': 42.0}, {'rule': 'download_genome_ref_units', 'runtime': 44.0}, {'rule': 'download_genome_ref_units', 'runtime': 40.0}, {'rule': 'download_genome_ref_units', 'runtime': 36.0}, {'rule': 'download_genome_ref_units', 'runtime': 37.0}, {'rule': 'download_genome_ref_units', 'runtime': 36.0}, {'rule': 'download_genome_ref_units', 'runtime': 28.0}, {'rule': 'download_genome_ref_units', 'runtime': 28.0}, {'rule': 'download_genome_ref_units', 'runtime': 32.0}, {'rule': 'download_genome_ref_units', 'runtime': 26.0}, {'rule': 'download_genome_ref_units', 'runtime': 20.0}, {'rule': 'download_genome_ref_units', 'runtime': 25.0}, {'rule': 'download_genome_ref_units', 'runtime': 24.0}, {'rule': 'download_genome_ref_units', 'runtime': 22.0}, {'rule': 'download_genome_ref_units', 'runtime': 23.0}, {'rule': 'download_genome_ref_units', 'runtime': 15.0}, {'rule': 'download_genome_ref_units', 'runtime': 15.0}, {'rule': 'download_genome_ref_units', 'runtime': 32.0}, {'rule': 'download_genome_ref_units', 'runtime': 12.0}, {'rule': 'download_genome_ref_units', 'runtime': 7.0}, {'rule': 'download_genome_ref_units', 'runtime': 46.0}, {'rule': 'download_genome_ref_units', 'runtime': 38.0}, {'rule': 'download_genome_ref_units', 'runtime': 37.0}, {'rule': 'download_genome_ref_units', 'runtime': 37.0}, {'rule': 'download_genome_ref_units', 'runtime': 36.0}, {'rule': 'download_genome_ref_units', 'runtime': 38.0}, {'rule': 'download_genome_ref_units', 'runtime': 41.0}, {'rule': 'download_genome_ref_units', 'runtime': 24.0}, {'rule': 'download_genome_ref_units', 'runtime': 37.0}, {'rule': 'download_genome_ref_units', 'runtime': 33.0}, {'rule': 'download_genome_ref_units', 'runtime': 33.0}, {'rule': 'download_genome_ref_units', 'runtime': 33.0}, {'rule': 'download_genome_ref_units', 'runtime': 47.0}, {'rule': 'download_genome_ref_units', 'runtime': 33.0}, {'rule': 'download_genome_ref_units', 'runtime': 26.0}, {'rule': 'download_genome_ref_units', 'runtime': 28.0}, {'rule': 'download_genome_ref_units', 'runtime': 28.0}, {'rule': 'download_genome_ref_units', 'runtime': 56.0}, {'rule': 'download_genome_ref_units', 'runtime': 16.0}, {'rule': 'download_genome_ref_units', 'runtime': 44.0}, {'rule': 'download_genome_ref_units', 'runtime': 36.0}, {'rule': 'download_genome_ref_units', 'runtime': 7.0}, {'rule': 'generate_circos_plot', 'runtime': 498.0}, {'rule': 'generate_circos_plot', 'runtime': 1249.0}, {'rule': 'index_bam_file', 'runtime': 4.0}, {'rule': 'index_bam_file', 'runtime': 3.0}, {'rule': 'index_bam_file', 'runtime': 6.0}, {'rule': 'index_bam_file', 'runtime': 4.0}, {'rule': 'index_bam_file', 'runtime': 6.0}, {'rule': 'index_bam_file', 'runtime': 6.0}, {'rule': 'make_genome_ref_index', 'runtime': 7266.0}, {'rule': 'make_genome_ref_index', 'runtime': 6410.0}, {'rule': 'sort_BAM_alignment', 'runtime': 5.0}, {'rule': 'sort_BAM_alignment', 'runtime': 16.0}]},
         "mark": "point",
         "encoding": {
           "x": {"field": "runtime", "type": "quantitative",
@@ -1980,7 +2040,7 @@ action:function(){this[this.select.items()+"s"]().select()}},selectNone:{text:t(
         "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
         "description": "Timeline of jobs.",
         "data": {
-          "values": [{'rule': 'align_rDNA_frags', 'starttime': '2020-05-01T15:21:43', 'endtime': '2020-05-01T15:53:24'}, {'rule': 'align_rDNA_frags', 'starttime': '2020-05-01T15:53:24', 'endtime': '2020-05-01T18:20:14'}, {'rule': 'concatenate_genome_ref', 'starttime': '2020-05-01T09:42:43', 'endtime': '2020-05-01T09:42:46'}, {'rule': 'concatenate_genome_ref', 'starttime': '2020-05-01T11:44:00', 'endtime': '2020-05-01T11:44:04'}, {'rule': 'create_bw_coverage_track', 'starttime': '2020-05-01T20:17:56', 'endtime': '2020-05-01T20:19:29'}, {'rule': 'create_bw_coverage_track', 'starttime': '2020-05-01T20:40:37', 'endtime': '2020-05-01T20:41:48'}, {'rule': 'create_bw_coverage_track', 'starttime': '2020-05-01T20:17:56', 'endtime': '2020-05-01T20:19:26'}, {'rule': 'create_bw_coverage_track', 'starttime': '2020-05-01T20:40:37', 'endtime': '2020-05-01T20:41:41'}, {'rule': 'create_rDNA_frags', 'starttime': '2020-05-01T15:21:34', 'endtime': '2020-05-01T15:21:42'}, {'rule': 'create_rDNA_frags', 'starttime': '2020-05-01T15:21:34', 'endtime': '2020-05-01T15:21:43'}, {'rule': 'download_GenBank_rDNA', 'starttime': '2020-05-01T14:04:14', 'endtime': '2020-05-01T14:04:22'}, {'rule': 'download_GenBank_rDNA', 'starttime': '2020-05-01T14:04:07', 'endtime': '2020-05-01T14:04:15'}, {'rule': 'download_UCSC_cytoband_data', 'starttime': '2020-05-01T21:32:20', 'endtime': '2020-05-01T21:32:24'}, {'rule': 'download_UCSC_cytoband_data', 'starttime': '2020-05-01T21:32:24', 'endtime': '2020-05-01T21:32:28'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:17:32', 'endtime': '2020-05-01T09:18:37'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:16:29', 'endtime': '2020-05-01T09:17:32'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:18:38', 'endtime': '2020-05-01T09:19:27'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:20:14', 'endtime': '2020-05-01T09:21:05'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:21:05', 'endtime': '2020-05-01T09:21:58'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:22:36', 'endtime': '2020-05-01T09:23:18'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:24:39', 'endtime': '2020-05-01T09:25:23'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:27:46', 'endtime': '2020-05-01T09:28:26'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:32:55', 'endtime': '2020-05-01T09:33:31'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:29:43', 'endtime': '2020-05-01T09:30:20'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:29:07', 'endtime': '2020-05-01T09:29:43'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:30:20', 'endtime': '2020-05-01T09:30:48'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:35:50', 'endtime': '2020-05-01T09:36:18'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:37:14', 'endtime': '2020-05-01T09:37:46'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:39:18', 'endtime': '2020-05-01T09:39:44'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:39:44', 'endtime': '2020-05-01T09:40:04'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:40:04', 'endtime': '2020-05-01T09:40:29'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:40:29', 'endtime': '2020-05-01T09:40:53'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:41:32', 'endtime': '2020-05-01T09:41:54'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:40:53', 'endtime': '2020-05-01T09:41:16'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:41:54', 'endtime': '2020-05-01T09:42:09'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:42:09', 'endtime': '2020-05-01T09:42:24'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:26:00', 'endtime': '2020-05-01T09:26:32'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:42:24', 'endtime': '2020-05-01T09:42:36'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:42:36', 'endtime': '2020-05-01T09:42:43'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:19:28', 'endtime': '2020-05-01T09:20:14'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:21:58', 'endtime': '2020-05-01T09:22:36'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:24:02', 'endtime': '2020-05-01T09:24:39'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:25:23', 'endtime': '2020-05-01T09:26:00'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:26:32', 'endtime': '2020-05-01T09:27:08'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:27:08', 'endtime': '2020-05-01T09:27:46'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:28:26', 'endtime': '2020-05-01T09:29:07'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:31:21', 'endtime': '2020-05-01T09:31:45'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:32:18', 'endtime': '2020-05-01T09:32:55'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:30:48', 'endtime': '2020-05-01T09:31:21'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:33:31', 'endtime': '2020-05-01T09:34:04'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:34:51', 'endtime': '2020-05-01T09:35:24'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:34:04', 'endtime': '2020-05-01T09:34:51'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:31:45', 'endtime': '2020-05-01T09:32:18'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:35:24', 'endtime': '2020-05-01T09:35:50'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:36:18', 'endtime': '2020-05-01T09:36:46'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:36:46', 'endtime': '2020-05-01T09:37:14'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:38:22', 'endtime': '2020-05-01T09:39:18'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:41:16', 'endtime': '2020-05-01T09:41:32'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:23:18', 'endtime': '2020-05-01T09:24:02'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:37:46', 'endtime': '2020-05-01T09:38:22'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T11:43:52', 'endtime': '2020-05-01T11:43:59'}, {'rule': 'generate_circos_plot', 'starttime': '2020-05-01T23:18:14', 'endtime': '2020-05-01T23:26:38'}, {'rule': 'generate_circos_plot', 'starttime': '2020-05-01T22:51:56', 'endtime': '2020-05-01T23:14:00'}, {'rule': 'index_bam_file', 'starttime': '2020-05-01T20:17:56', 'endtime': '2020-05-01T20:18:00'}, {'rule': 'index_bam_file', 'starttime': '2020-05-01T20:18:00', 'endtime': '2020-05-01T20:18:03'}, {'rule': 'index_bam_file', 'starttime': '2020-05-01T20:37:37', 'endtime': '2020-05-01T20:37:43'}, {'rule': 'index_bam_file', 'starttime': '2020-05-01T20:17:56', 'endtime': '2020-05-01T20:18:00'}, {'rule': 'index_bam_file', 'starttime': '2020-05-01T20:37:37', 'endtime': '2020-05-01T20:37:43'}, {'rule': 'index_bam_file', 'starttime': '2020-05-01T20:37:37', 'endtime': '2020-05-01T20:37:43'}, {'rule': 'make_genome_ref_index', 'starttime': '2020-05-01T09:42:46', 'endtime': '2020-05-01T11:43:52'}, {'rule': 'make_genome_ref_index', 'starttime': '2020-05-01T11:44:04', 'endtime': '2020-05-01T13:30:54'}, {'rule': 'sort_BAM_alignment', 'starttime': '2020-05-01T18:20:23', 'endtime': '2020-05-01T18:20:28'}, {'rule': 'sort_BAM_alignment', 'starttime': '2020-05-01T18:20:14', 'endtime': '2020-05-01T18:20:30'}]
+          "values": [{'rule': 'align_rDNA_frags', 'starttime': '2020-05-01T15:21:43', 'endtime': '2020-05-01T15:53:24'}, {'rule': 'align_rDNA_frags', 'starttime': '2020-05-01T15:53:24', 'endtime': '2020-05-01T18:20:14'}, {'rule': 'concatenate_genome_ref', 'starttime': '2020-05-01T09:42:43', 'endtime': '2020-05-01T09:42:46'}, {'rule': 'concatenate_genome_ref', 'starttime': '2020-05-01T11:44:00', 'endtime': '2020-05-01T11:44:04'}, {'rule': 'create_bed_from_bam', 'starttime': '2020-05-05T17:37:39', 'endtime': '2020-05-05T17:38:59'}, {'rule': 'create_bed_from_bam', 'starttime': '2020-05-05T17:37:39', 'endtime': '2020-05-05T17:39:03'}, {'rule': 'create_bw_coverage_track', 'starttime': '2020-05-05T17:37:39', 'endtime': '2020-05-05T17:39:50'}, {'rule': 'create_bw_coverage_track', 'starttime': '2020-05-05T17:37:39', 'endtime': '2020-05-05T17:39:54'}, {'rule': 'create_rDNA_frags', 'starttime': '2020-05-01T15:21:34', 'endtime': '2020-05-01T15:21:42'}, {'rule': 'create_rDNA_frags', 'starttime': '2020-05-01T15:21:34', 'endtime': '2020-05-01T15:21:43'}, {'rule': 'download_GenBank_rDNA', 'starttime': '2020-05-01T14:04:14', 'endtime': '2020-05-01T14:04:22'}, {'rule': 'download_GenBank_rDNA', 'starttime': '2020-05-01T14:04:07', 'endtime': '2020-05-01T14:04:15'}, {'rule': 'download_UCSC_cytoband_data', 'starttime': '2020-05-01T21:32:20', 'endtime': '2020-05-01T21:32:24'}, {'rule': 'download_UCSC_cytoband_data', 'starttime': '2020-05-01T21:32:24', 'endtime': '2020-05-01T21:32:28'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:17:32', 'endtime': '2020-05-01T09:18:37'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:16:29', 'endtime': '2020-05-01T09:17:32'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:18:38', 'endtime': '2020-05-01T09:19:27'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:20:14', 'endtime': '2020-05-01T09:21:05'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:21:05', 'endtime': '2020-05-01T09:21:58'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:22:36', 'endtime': '2020-05-01T09:23:18'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:24:39', 'endtime': '2020-05-01T09:25:23'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:27:46', 'endtime': '2020-05-01T09:28:26'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:32:55', 'endtime': '2020-05-01T09:33:31'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:29:43', 'endtime': '2020-05-01T09:30:20'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:29:07', 'endtime': '2020-05-01T09:29:43'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:30:20', 'endtime': '2020-05-01T09:30:48'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:35:50', 'endtime': '2020-05-01T09:36:18'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:37:14', 'endtime': '2020-05-01T09:37:46'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:39:18', 'endtime': '2020-05-01T09:39:44'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:39:44', 'endtime': '2020-05-01T09:40:04'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:40:04', 'endtime': '2020-05-01T09:40:29'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:40:29', 'endtime': '2020-05-01T09:40:53'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:41:32', 'endtime': '2020-05-01T09:41:54'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:40:53', 'endtime': '2020-05-01T09:41:16'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:41:54', 'endtime': '2020-05-01T09:42:09'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:42:09', 'endtime': '2020-05-01T09:42:24'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:26:00', 'endtime': '2020-05-01T09:26:32'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:42:24', 'endtime': '2020-05-01T09:42:36'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:42:36', 'endtime': '2020-05-01T09:42:43'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:19:28', 'endtime': '2020-05-01T09:20:14'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:21:58', 'endtime': '2020-05-01T09:22:36'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:24:02', 'endtime': '2020-05-01T09:24:39'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:25:23', 'endtime': '2020-05-01T09:26:00'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:26:32', 'endtime': '2020-05-01T09:27:08'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:27:08', 'endtime': '2020-05-01T09:27:46'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:28:26', 'endtime': '2020-05-01T09:29:07'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:31:21', 'endtime': '2020-05-01T09:31:45'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:32:18', 'endtime': '2020-05-01T09:32:55'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:30:48', 'endtime': '2020-05-01T09:31:21'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:33:31', 'endtime': '2020-05-01T09:34:04'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:34:51', 'endtime': '2020-05-01T09:35:24'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:34:04', 'endtime': '2020-05-01T09:34:51'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:31:45', 'endtime': '2020-05-01T09:32:18'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:35:24', 'endtime': '2020-05-01T09:35:50'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:36:18', 'endtime': '2020-05-01T09:36:46'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:36:46', 'endtime': '2020-05-01T09:37:14'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:38:22', 'endtime': '2020-05-01T09:39:18'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:41:16', 'endtime': '2020-05-01T09:41:32'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:23:18', 'endtime': '2020-05-01T09:24:02'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T09:37:46', 'endtime': '2020-05-01T09:38:22'}, {'rule': 'download_genome_ref_units', 'starttime': '2020-05-01T11:43:52', 'endtime': '2020-05-01T11:43:59'}, {'rule': 'generate_circos_plot', 'starttime': '2020-05-02T12:40:33', 'endtime': '2020-05-02T12:48:51'}, {'rule': 'generate_circos_plot', 'starttime': '2020-05-02T12:40:33', 'endtime': '2020-05-02T13:01:22'}, {'rule': 'index_bam_file', 'starttime': '2020-05-01T20:17:56', 'endtime': '2020-05-01T20:18:00'}, {'rule': 'index_bam_file', 'starttime': '2020-05-01T20:18:00', 'endtime': '2020-05-01T20:18:03'}, {'rule': 'index_bam_file', 'starttime': '2020-05-01T20:37:37', 'endtime': '2020-05-01T20:37:43'}, {'rule': 'index_bam_file', 'starttime': '2020-05-01T20:17:56', 'endtime': '2020-05-01T20:18:00'}, {'rule': 'index_bam_file', 'starttime': '2020-05-01T20:37:37', 'endtime': '2020-05-01T20:37:43'}, {'rule': 'index_bam_file', 'starttime': '2020-05-01T20:37:37', 'endtime': '2020-05-01T20:37:43'}, {'rule': 'make_genome_ref_index', 'starttime': '2020-05-01T09:42:46', 'endtime': '2020-05-01T11:43:52'}, {'rule': 'make_genome_ref_index', 'starttime': '2020-05-01T11:44:04', 'endtime': '2020-05-01T13:30:54'}, {'rule': 'sort_BAM_alignment', 'starttime': '2020-05-01T18:20:23', 'endtime': '2020-05-01T18:20:28'}, {'rule': 'sort_BAM_alignment', 'starttime': '2020-05-01T18:20:14', 'endtime': '2020-05-01T18:20:30'}]
         },
         "mark": "point",
         "encoding": {

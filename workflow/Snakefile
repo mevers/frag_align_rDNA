@@ -3,7 +3,7 @@
 # Author: Maurits Evers (maurits.evers@gmail.com)
 # License: MIT
 # Original date: 28-04-2020
-# Last changed: 01-05-2020
+# Last changed: 05-05-2020
 
 
 # Config files
@@ -11,10 +11,10 @@ configfile: "workflow/config.yaml"
 
 
 # Include specific rules
-# Some rules from `rules/download_files.smk` are very slow (see the rules
-# file for details, linking to a GH issue); it is recommended to comment out
-# the `include: "rules/download_files.smk"` line after downloading all
-# necessary files
+# Some rules from `rules/download_files.smk` are very slow (see the rules file
+# for details, linking the link to an open GH issue); it is recommended to
+# comment out the `include: "rules/download_files.smk"` line after downloading
+# all necessary files
 include: "rules/download_files.smk"
 include: "rules/make_reference.smk"
 include: "rules/create_align_rDNA_frags.smk"
@@ -25,9 +25,10 @@ include: "rules/generate_circos_plot.smk"
 rule all:
     input:
         expand(
-            "04_coverage_tracks/{id}/rDNA_frags_len{len}_step{len}.bw",
+            "04_output_data/{id}/rDNA_frags_len{len}_step{len}.{ext}",
             id = ["human/GRCh38", "mouse/GRCm38"],
-            len = [100, 500, 1000]),
+            len = [100, 500, 1000],
+            ext = ["bw", "bed"]),
         expand(
             "05_circos_plots/{id}/circos_rDNA_frags_len{len}_step{len}.{ext}",
             id = ["human/GRCh38", "mouse/GRCm38"],

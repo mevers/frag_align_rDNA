@@ -32,8 +32,9 @@ can be found in the [`snakemake` rule](workflow/rules/create_align_rDNA_frags.sm
 - Align all rDNA subsequences to the corresponding reference genome with
 `bowtie2`, using default parameters except for switch `--all` to report *all*
 alignments.
-- Index resulting BAM file with `samtools index`
-- Create BigWig coverage track from BAM file using `deeptools` `bamCoverage`
+- Index resulting BAM file with `samtools index`.
+- Create BigWig coverage track from BAM file using `deeptools bamCoverage`.
+- Create BED output frin BAM file using `bedtools bamtobed`.
 - Create Circos plots to visualise the mapping of rDNA fragments to the
 corresponding reference genome.
 

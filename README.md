@@ -129,6 +129,26 @@ Figures are included as PNGs in folders `05_circos_plots/mouse/GRCm38` and
 `05_circos_plots/mouse/GRCm38`. Scalable PDF versions of the figures are
 generated when executing the full workflow.
 
+In summary:
+
+1. Most 100 bp long chunks from the human and mouse rDNA have matches across
+the genome; these matches are often one-to-many mappings, meaning that one
+100 bp long rDNA region maps to multiple loci in the genome.
+2. Genomic matches are not necessarily on accrocentric chromosomes but are
+located throughout the entire genome.
+3. In mouse, there are regions in the canonical rDNA sequence that have no
+matches elsewhere in the genome. This may be indicative of (1) a poor rDNA
+reference sequence, and/or (2) an incomplete genome reference assembly.
+4. Genomic regions that match rDNA regions overlap with repetitive elements,
+mainly AluY elements in human, and B1/B2 SINE elements in mouse.
+
+
+Further selected references:
+
+- [Kim et al., Structural Variation of Alu Element and Human Disease, Genomics Inform. 14, 70 (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5056899/)
+- [Longo et al., Identification of a Recently Active Mammalian SINE Derived from Ribosomal RNA, Genome Biol Evol. 7, 775 (2015)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4994717/)
+- [Roman et al., B1-SINE retrotransposons, Mob. Genet. Elements 1, 66 (2011)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3190280/)
+
 
 ### Bugs
 

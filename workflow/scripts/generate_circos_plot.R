@@ -17,8 +17,6 @@ png_file <- snakemake@output[["png"]]
 
 
 # Read data
-#bam <- BamFile("rDNA_frags_len500_step500.bam")
-#rDNA <- readDNAStringSet("U13369.1.fa.gz")
 bam <- BamFile(bam_file)
 rDNA <- readDNAStringSet(rDNA_file)
 cyto <- read_delim(
@@ -85,8 +83,8 @@ title <- sprintf("Reference: %s (%s); rDNA fragments from sliding windows (lengt
 pdf(pdf_file)
 circos.initializeWithIdeogram(
 	df_cyto,
-	chromosome.index = df_size$name,
-	sector.width = c(rep(1, nrow(df_size) - 1), 10))
+	chromosome.index = valid_chr,
+	sector.width = c(rep(1, length(valid_chr) - 1), 10))
 circos.genomicLink(
 	df_map[1:3], df_map[4:6],
 	col = rgb(0, 0, 0, max = 255, alpha = 20), border = "black", lwd = 0.01)
@@ -98,8 +96,8 @@ dev.off()
 png(png_file, height = 1800, width = 1800, res = 300)
 circos.initializeWithIdeogram(
 	df_cyto,
-	chromosome.index = df_size$name,
-	sector.width = c(rep(1, nrow(df_size) - 1), 10))
+	chromosome.index = valid_chr,
+	sector.width = c(rep(1, length(valid_chr) - 1), 10))
 circos.genomicLink(
 	df_map[1:3], df_map[4:6],
 	col = rgb(0, 0, 0, max = 255, alpha = 20), border = "black", lwd = 0.01)

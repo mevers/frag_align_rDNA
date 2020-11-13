@@ -30,8 +30,9 @@ data:
         GenBank:
             accession_no: BK000964.3
         UCSC:
-            base_url: hgdownload.cse.ucsc.edu/goldenPath/mm10/database
-            cytoband: cytoBand.txt.gz
+            base_url: hgdownload.cse.ucsc.edu/goldenPath/mm10
+            cytoband: database/cytoBand.txt.gz
+            repeatmasker: bigZips/chromOut.tar.gz
     human:
         Ensembl:
             base_url: ftp://ftp.ensembl.org/pub/release-99/fasta/homo_sapiens/dna
@@ -65,5 +66,6 @@ data:
         GenBank:
             accession_no: U13369.1
         UCSC:
-            base_url: hgdownload.cse.ucsc.edu/goldenPath/hg38/database
-            cytoband: cytoBand.txt.gz
+            base_url: hgdownload.cse.ucsc.edu/goldenPath/hg38
+            cytoband: database/cytoBand.txt.gz
+            repeatmasker: bigZips/hg38.fa.out.gz
